@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "011e5183-7604-46c7-8496-be79a7ee1b2c",
+		"name": "AppTestAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43361845",
+		"_collection_link": "https://crimson-crescent-262801.postman.co/workspace/723a6d4a-c5d0-408d-8c35-c079be067bab/collection/43361845-011e5183-7604-46c7-8496-be79a7ee1b2c?action=share&source=collection_link&creator=43361845"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nameCategory\":\"Carros\",\r\n    \"descriptionCategory\":\"Carros de Lujo\",\r\n    \"enabledCategory\":true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9595/DemoBackEnd/categories/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9595",
+					"path": [
+						"DemoBackEnd",
+						"categories",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nameCategory\":\"Computadoras\",\r\n    \"descriptionCategory\":\"PCs y Laptops\",\r\n    \"enabledCategory\":true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9595/DemoBackEnd/categories/update/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9595",
+					"path": [
+						"DemoBackEnd",
+						"categories",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9595/DemoBackEnd/categories/readAll",
+					"host": [
+						"localhost"
+					],
+					"port": "9595",
+					"path": [
+						"DemoBackEnd",
+						"categories",
+						"readAll"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
