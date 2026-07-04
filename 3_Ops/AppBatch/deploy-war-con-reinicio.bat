@@ -2,7 +2,7 @@
 setlocal
 
 rem === Variables ===
-set "CATALINA_HOME=C:\ProgramasInstalados\apache-tomcat-11.0.5"
+set "CATALINA_HOME=C:\ProgramasInstalados\apache-tomcat-11.0.22"
 set "TOMCAT_WEBAPPS=%CATALINA_HOME%\webapps"
 set "WAR_SOURCE=C:\Jenkins\AppPipeline\1_Dev\AppBackEnd\target\DemoBackEnd.war"
 set "WAR_DEST=%TOMCAT_WEBAPPS%\DemoBackEnd.war"
